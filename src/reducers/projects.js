@@ -3,7 +3,8 @@ import {
   RECEIVE_PROJECTS
 } from '../actions/projects';
 
-export default function projects(state = { }, action) {
+export default function projects(state, action) {
+  if (state === undefined) return {};
   switch (action.type) {
   case REQUEST_PROJECTS:
     return state;

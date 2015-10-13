@@ -11,9 +11,9 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(CounterActions, dispatch);
-}
+// function mapDispatchToProps(dispatch) {
+//   return bindActionCreators(CounterActions, dispatch);
+// }
 
 const actions = {
   increment: CounterActions.increment,

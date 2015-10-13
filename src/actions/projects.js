@@ -19,7 +19,7 @@ export function fetchProjects() {
   return dispatch => {
     console.log('Fetching projects...');
     dispatch(requestProjects());
-    return window.fetch(`https://bestofjs-data.divshot.io/projects.json`)
+    return window.fetch(`https://bestofjs-api-v1.divshot.io/projects.json`)
       .then(response => response.json())
       .then(json => dispatch(receiveProjects(json.projects)));
   };

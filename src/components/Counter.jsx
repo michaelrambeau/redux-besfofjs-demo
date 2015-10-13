@@ -7,7 +7,7 @@ var Counter = React.createClass({
       <div>
         <h3>Counter</h3>
         <button onClick={decrement} className="ui button blue">-</button>
-        <div className="ui labeled button" tabindex="0">
+        <div className="ui labeled button" tabIndex="0">
           <div className="ui basic blue button">
             <i className="star icon"></i> Counter
           </div>
